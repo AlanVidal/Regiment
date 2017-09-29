@@ -20,12 +20,11 @@ public class App {
 		Personne p0 = new Personne("MrPersonne", "Paul", secu, g);
 
 		armée.newSoldat("a", "aa", secu);
-		Officier o0 = armée.newOffier("Officier0", "0", secu);
-		Officier o1 = armée.newOffier("Officier1", "1", secu);
-		armée.newRegiment();
+		Officier o0 = armée.newOffier("MrOfficier0", "0", secu);
+		Officier o1 = armée.newOffier("MrOfficier1", "1", secu);
 		armée.newRegiment();
 
-		armée.mutation(3, o0);
+		armée.mutation(1, o1);
 		armée.newRegiment();
 
 		armée.mutation(2, o1);
