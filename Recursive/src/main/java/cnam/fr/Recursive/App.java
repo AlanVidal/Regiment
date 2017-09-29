@@ -16,20 +16,18 @@ public class App {
 		Gouvernement g = new Gouvernement();
 		Secu secu = new Secu();
 		Armée armée = new Armée(g);
+
 		Personne p0 = new Personne("MrPersonne", "Paul", secu, g);
-		armée.newRegiment();
 
 		armée.newSoldat("a", "aa", secu);
 		Officier o0 = armée.newOffier("b", "bb", secu);
-		Officier o1 = armée.newOffier("b", "bb", secu);
-
+		Officier o1 = armée.newOffier("bd", "bb", secu);
 		armée.newRegiment();
-		armée.afficherRegiment();
-		System.out.println(armée);
-		armée.afficherRegiment();
 
-		armée.mutation(2, o0);
+		armée.mutation(1, o1);
+		armée.newRegiment();
 
+		armée.mutation(2, o1);
 		armée.afficherRegiment();
 
 	}
