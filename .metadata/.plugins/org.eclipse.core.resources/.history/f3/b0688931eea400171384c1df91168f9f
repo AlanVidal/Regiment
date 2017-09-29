@@ -1,0 +1,17 @@
+package cnam.fr.Recursive.administration;
+
+public class Armée {
+
+	private Armée laSeuleArmee = new Armée();
+
+	private Armée() {
+		if (laSeuleArmee != null) {
+			laSeuleArmee = new Armée();
+		}
+
+	}
+
+	public Armée getArmée() {
+		return this.laSeuleArmee;
+	}
+}

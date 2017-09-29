@@ -1,0 +1,10 @@
+package cnam.fr.Recursive.administration;
+
+public class Regiment {
+	
+	public Regiment(double numRegiment) {
+		numRegiment.enrolement(this);
+	}
+	
+	
+}

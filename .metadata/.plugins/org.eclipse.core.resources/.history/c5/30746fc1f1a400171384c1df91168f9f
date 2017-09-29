@@ -1,0 +1,14 @@
+package cnam.fr.Recursive.human;
+
+import cnam.fr.Recursive.administration.Gouvernement;
+import cnam.fr.Recursive.administration.Secu;
+
+public abstract class Militaire extends Personne{
+	this.armée = armée;
+
+	public Militaire(String nom, String prenom, Secu secu, Gouvernement g,Armée armée) {
+		super(nom, prenom, secu, g);
+		this.armée = armée;
+	}
+
+}

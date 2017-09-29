@@ -1,0 +1,9 @@
+package cnam.fr.Recursive.administration.militaire;
+
+public class Snippet {
+	public static void main(String[] args) {
+		armée.enrolement(this);
+		
+	}
+}
+

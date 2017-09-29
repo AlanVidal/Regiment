@@ -1,0 +1,30 @@
+package cnam.fr.Recursive.administration;
+
+import java.util.ArrayList;
+
+import cnam.fr.Recursive.human.Militaire;
+import cnam.fr.Recursive.human.Officier;
+
+public class Regiment {
+	ArrayList<Militaire> liste = new ArrayList<Militaire>();
+	Officier officier;
+	
+	private double numRegiment;
+
+	public Regiment(double numRegiment) {
+		this.numRegiment = numRegiment;
+	}
+
+	public double getNumRegiment() {
+		return this.numRegiment;
+	}
+	
+	public ArrayList<Militaire> getListe(){
+		return this.liste;
+	}
+	
+	public void addMilitaire(Militaire m){
+		liste.add(m);
+	}
+	
+}

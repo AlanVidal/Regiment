@@ -1,0 +1,23 @@
+package cnam.fr.Recursive;
+
+import cnam.fr.Recursive.administration.Armée;
+import cnam.fr.Recursive.administration.Gouvernement;
+import cnam.fr.Recursive.administration.Secu;
+import cnam.fr.Recursive.human.Personne;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) {
+		
+		Gouvernement  g = new Gouvernement();
+		Secu secu = new Secu();
+		Armée armée = new Armée();
+		Personne p0 = new Personne("Paul", "Paul", secu, g)
+		
+		
+
+	}
+}

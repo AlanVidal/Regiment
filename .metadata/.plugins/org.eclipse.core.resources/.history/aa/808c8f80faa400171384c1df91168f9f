@@ -1,0 +1,25 @@
+package cnam.fr.Recursive.human;
+
+import cnam.fr.Recursive.administration.Armée;
+import cnam.fr.Recursive.administration.Gouvernement;
+import cnam.fr.Recursive.administration.Regiment;
+import cnam.fr.Recursive.administration.Secu;
+
+public abstract class Militaire extends Personne {
+	Armée armée;
+	Regiment regiment;
+
+	public Militaire(String nom, String prenom, Secu secu, Gouvernement g, Armée armée, Regiment regiment) {
+		super(nom, prenom, secu, g);
+		this.armée = armée;
+		this.regiment = regiment;
+		armée.enrolement(this);
+	}
+
+	public void setRegiment(Regiment r) {
+		this.regiment = r;
+	}
+	public Regiment getRegiment() {
+		this.regiment = r;
+	}
+}

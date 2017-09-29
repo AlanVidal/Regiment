@@ -1,0 +1,11 @@
+package cnam.fr.Recursive.human;
+
+import cnam.fr.Recursive.administration.Secu;
+
+public class Militaire extends Personne{
+
+	public Militaire(String nom, String prenom, Secu secu) {
+		super(nom, prenom, secu);
+	}
+
+}

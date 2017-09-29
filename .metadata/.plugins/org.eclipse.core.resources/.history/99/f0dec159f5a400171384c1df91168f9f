@@ -1,0 +1,18 @@
+package cnam.fr.Recursive.human;
+
+import cnam.fr.Recursive.administration.Armée;
+import cnam.fr.Recursive.administration.Gouvernement;
+import cnam.fr.Recursive.administration.Secu;
+
+public class Soldat extends Militaire {
+
+	public Soldat(String nom, String prenom, Secu secu, Gouvernement g,Armée armée) {
+		super(nom, prenom, secu, g, armée);
+	}
+
+	public void obeir() {
+		System.out.println("Chef oui Chef !");
+	}
+ 
+
+}

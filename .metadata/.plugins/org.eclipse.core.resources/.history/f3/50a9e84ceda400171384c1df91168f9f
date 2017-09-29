@@ -1,0 +1,18 @@
+package cnam.fr.Recursive.human;
+
+import cnam.fr.Recursive.administration.Gouvernement;
+import cnam.fr.Recursive.administration.Secu;
+
+public class Soldat extends Militaire{
+
+	public Soldat(String nom, String prenom, Secu secu, Gouvernement g) {
+		super(nom, prenom, secu, g);
+	}
+	
+	public void obeir(){
+		System.out.println("Nettoyez les toilettes");
+	}
+	
+		
+	
+}

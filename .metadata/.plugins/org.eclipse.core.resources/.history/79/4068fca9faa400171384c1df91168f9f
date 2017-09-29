@@ -1,0 +1,20 @@
+package cnam.fr.Recursive.human;
+
+import cnam.fr.Recursive.administration.Armée;
+import cnam.fr.Recursive.administration.Gouvernement;
+import cnam.fr.Recursive.administration.Regiment;
+import cnam.fr.Recursive.administration.Secu;
+
+public class Officier extends Militaire{
+
+	public Officier(String nom, String prenom, Secu secu, Gouvernement g, Armée armée, Regiment regiment) {
+		super(nom, prenom, secu, g, armée, regiment);
+	}
+	
+	public void donnerUnOrdre(){
+		System.out.println("Nettoyez les toilettes");
+	}
+	
+		
+	
+}

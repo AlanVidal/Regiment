@@ -1,0 +1,6 @@
+package cnam.fr.Recursive.administration;
+
+//Singleton
+public class Gouvernement {
+
+}

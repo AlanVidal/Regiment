@@ -1,0 +1,21 @@
+package cnam.fr.Recursive.administration;
+
+public class Armée {
+
+	private Armée laSeuleArmee;
+
+	public Armée() {
+		if (laSeuleArmee == null) {
+			laSeuleArmee = this;
+		}
+	}
+
+	public Armée getArmée() {
+		return this.laSeuleArmee;
+	}
+
+	public String toString() {
+		return "Ici c'est l'armée la seul la vraie !";
+	}
+
+}

@@ -1,0 +1,15 @@
+package cnam.fr.Recursive.administration;
+
+public class Regiment {
+
+	private double numRegiment;
+
+	public Regiment(double numRegiment) {
+		this.numRegiment = numRegiment;
+	}
+	public getNumRegiment(){
+		return this.numRegiment;
+		
+		
+	}
+}

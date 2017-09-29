@@ -1,0 +1,9 @@
+package cnam.fr.Recursive.administration;
+
+import java.util.ArrayList;
+
+public staticclass Gouvernement {
+	ArrayList<Double> liste = new ArrayList<Double>();
+	
+
+}

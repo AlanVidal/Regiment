@@ -1,0 +1,33 @@
+package cnam.fr.Recursive.administration;
+
+import java.util.ArrayList;
+
+import cnam.fr.Recursive.human.Soldat;
+
+public class Armée {
+
+	static private Armée laSeuleArmee = new Armée();
+	ArrayList<Double> listeOfficier = new ArrayList<Double>();
+	ArrayList<Double> listeSoldat = new ArrayList<Double>();
+	ArrayList<Double> listeMilitaire = new ArrayList<Double>();
+
+	public Armée() {
+
+	}
+
+	public Armée getArmée() {
+		return this.laSeuleArmee;
+	}
+
+	public String toString() {
+		return "Ici c'est l'armée la seul la vraie !";
+	}
+
+	public void enrolement(Soldat soldat) {
+		if(soldat.getClass()== Soldat.class){
+			listeSoldat.add(soldat)
+			
+		}
+	}
+	
+}

@@ -1,0 +1,60 @@
+package cnam.fr.Recursive.administration;
+
+import java.util.ArrayList;
+
+import cnam.fr.Recursive.human.Militaire;
+import cnam.fr.Recursive.human.Officier;
+import cnam.fr.Recursive.human.Soldat;
+
+public class Armée {
+
+	static private Armée laSeuleArmee = new Armée();
+	double numRegiment;
+	Gouvernement g;
+	
+	ArrayList<Double> listeOfficier = new ArrayList<Double>();
+	ArrayList<Double> listeSoldat = new ArrayList<Double>();
+	ArrayList<Double> listeMilitaire = new ArrayList<Double>();
+	ArrayList<Double> listeRegiment = new ArrayList<Double>();
+
+	public Armée(Gouvernement g) {
+		this.numRegiment = -1;
+		this.g= g;
+	}
+
+	public Armée getArmée() {
+		return this.laSeuleArmee;
+	}
+
+	@Override
+	public String toString() {
+		return "Armée [listeOfficier=" + listeOfficier + ", listeSoldat=" + listeSoldat
+				+ ", listeMilitaire=" + listeMilitaire + ", listeRegiment=" + listeRegiment + "]";
+	}
+
+	
+	
+	public void newSoldat(String nom, String prenom, Secu secu) {
+		Soldat r = new Soldat(nom, prenom, this.secu, this.g,this);
+		listeRegiment.add(r.getNumRegiment());
+	}
+	
+	public void newRegiment() {
+		numRegiment++;
+		Regiment r = new Regiment(this.numRegiment);
+		listeRegiment.add(r.getNumRegiment());
+	}
+
+	public void enrolement(Militaire militaire) {
+		listeMilitaire.add(militaire.getNumSecu());
+
+		if (militaire.getClass() == Soldat.class) {
+			listeSoldat.add(militaire.getNumSecu());
+
+		}
+		if (militaire.getClass() == Officier.class) {
+			listeOfficier.add(militaire.getNumSecu());
+		}
+	}
+
+}

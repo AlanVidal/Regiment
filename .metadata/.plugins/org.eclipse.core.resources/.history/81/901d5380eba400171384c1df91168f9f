@@ -1,0 +1,39 @@
+package cnam.fr.Recursive.human;
+
+import cnam.fr.Recursive.administration.Secu;
+
+public class Personne {
+	int numSecu;
+	String nom;
+	String prenom;
+	
+	public Personne(String nom, String prenom, Secu secu) {
+		this.nom = nom;
+		this.prenom = prenom;
+		this.numSecu = secu.inscription();
+	}
+
+	private void recensement(){
+		//Gouv
+	}
+	
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	} 
+	
+	
+	
+	
+}

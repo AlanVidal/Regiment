@@ -1,0 +1,17 @@
+package cnam.fr.Recursive;
+
+import cnam.fr.Recursive.administration.Armée;
+import cnam.fr.Recursive.administration.Gouvernement;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) {
+		
+		Gouvernement  g = new Gouvernement();
+		Armée armée = new Armée();
+
+	}
+}
